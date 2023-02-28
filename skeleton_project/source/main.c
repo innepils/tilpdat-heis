@@ -18,6 +18,8 @@ int main(){
         int floor = elevio_floorSensor();
         printf("floor: %d \n",floor);
 
+        elevio_floorIndicator(floor);
+        
         if(floor == 0){
             elevio_motorDirection(DIRN_UP);
         }
