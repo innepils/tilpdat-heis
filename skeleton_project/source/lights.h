@@ -1,2 +1,1 @@
-void floorLightOn(floor);
-void clearFloorLamp(floor);
+void floorLightOn(int floor);

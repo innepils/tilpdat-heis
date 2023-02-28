@@ -18,7 +18,7 @@ int main(){
     while(1){
         int floor = elevio_floorSensor();
         printf("floor: %d \n",floor);
-        
+    
         if(floor == 0){
             elevio_motorDirection(DIRN_UP);
         }
@@ -46,6 +46,9 @@ int main(){
             break;
         }
         
+        if(floor != -1){
+            elevio_floorIndicator(floor);
+        }
         nanosleep(&(struct timespec){0, 20*1000*1000}, NULL);
     }
 

@@ -1,23 +1,20 @@
-#include "elevio.h"
+#include "driver/elevio.h"
+#include "lights.h"
 
-void floorLightOn(floor){
+void floorLightOn(int floor){
     int etasje = floor;
     while (etasje >= 0){
         if (etasje == 0){
-            elevio_floorIndicator(1);
+            elevio_floorIndicator(0);
         }
-        elif (etasje == 1){
+        else if (etasje == 1){
+            elevio_floorIndicator(1);
+        }    
+        else if (etasje == 2){
             elevio_floorIndicator(2);
         }    
-        elif (etasje == 2){
-            elevio_floorIndicator(3);
-        }    
-        else (etasje == 3){
+        else {
             elevio_floorIndicator(3);
         }  
     }      
-};
-
-void clearFloorLamp(floor){
-
 };
