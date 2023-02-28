@@ -21,6 +21,7 @@ int main(){
     
         if(floor == 0){
             elevio_motorDirection(DIRN_UP);
+            elevio_doorOpenLamp(1);
         }
 
         if(floor == N_FLOORS-1){
@@ -49,6 +50,7 @@ int main(){
         if(floor != -1){
             elevio_floorIndicator(floor);
         }
+
         nanosleep(&(struct timespec){0, 20*1000*1000}, NULL);
     }
 
