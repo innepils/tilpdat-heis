@@ -33,7 +33,7 @@ int main(){
                 elevio_buttonLamp(f, b, btnPressed);
             }
         }
-
+        
         if(elevio_obstruction()){
             elevio_stopLamp(1);
         } else {
