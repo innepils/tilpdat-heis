@@ -1,2 +1,3 @@
 # heislab
-TTK4235 - Heislab - Jonas og Simon
+TTK4235 - Tilpassede datasystemer
+Jonas Frøiland og Simon Klovning
